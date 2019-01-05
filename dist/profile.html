@@ -13,7 +13,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
-  <title>Welcome to Blogen</title>
+  <title>Blogen | Profile</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item px-2">
-            <a href="index.html" class="nav-link active">Dashboard</a>
+            <a href="index.html" class="nav-link">Dashboard</a>
           </li>
           <li class="nav-item px-2">
             <a href="posts.html" class="nav-link">Posts</a>
@@ -67,7 +67,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1><i class="fas fa-cog"></i>&nbsp;Dashboard</h1>
+          <h1><i class="fas fa-user-circle"></i>&nbsp;Profile</h1>
         </div>
       </div>
     </div>
@@ -81,255 +81,59 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="" class="btn btn-primary btn-block mb-2" data-toggle="modal"
-            data-target="#addPostModal"><i class="fas fa-plus"></i>&nbsp;Add
-            Post</a>
+          <a href="index.html" class="btn btn-outline-primary btn-block mb-2"><i
+              class="fas fa-cog"></i>&nbsp;Dashboard</a>
         </div>
         <div class="col-md-3">
-          <a href="" class="btn btn-success btn-block mb-2" data-toggle="modal"
-            data-target="#addCategoryModal"><i class="fas fa-plus"></i>&nbsp;Add
-            Category</a>
+          <a href="" class="btn btn-success btn-block mb-2"><i class="fas fa-lock"></i>&nbsp;Change
+            Password</a>
         </div>
         <div class="col-md-3">
-          <a href="" class="btn btn-warning btn-block mb-2" data-toggle="modal"
-            data-target="#addUserModal"><i class="fas fa-plus"></i>&nbsp;Add
-            User</a>
+          <a href="" class="btn btn-danger btn-block mb-2"><i class="fas fa-trash"></i>&nbsp;Delete
+            Account</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Add Post Modal -->
-  <div class="modal fade" id="addPostModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title">Add Post</h5>
-          <button class="close text-white" data-dismiss="modal"><span>&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="title">Post Title</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="category">Category</label>
-              <select name="category" id="category" class="form-control">
-                <option value="">Web Development</option>
-                <option value="">Tech Gadgets</option>
-                <option value="">Business</option>
-                <option value="">Health & Wellness</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="image">Upload Image</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="image">
-                <label for="image" class="custom-file-label">Choose File</label>
-              </div>
-              <small class="form-text text-muted">Max Size 3MB</small>
-            </div>
-            <div class="form-group">
-              <label for="body">Body</label>
-              <textarea name="postBody" id="postBody" rows="10" class="form-control"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button class="btn btn-primary" data-dismiss="modal">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Add Category Modal -->
-  <div class="modal fade" id="addCategoryModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-success text-white">
-          <h5 class="modal-title">Add Category</h5>
-          <button class="close text-white" data-dismiss="modal"><span>&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="title">Category Title</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button class="btn btn-success" data-dismiss="modal">Save</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Add User Modal -->
-  <div class="modal fade" id="addUserModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-warning text-white">
-          <h5 class="modal-title">Add User</h5>
-          <button class="close text-white" data-dismiss="modal"><span>&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="name">Email Address</label>
-              <input type="email" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="confirmPassword">Confirm Password</label>
-              <input type="password" class="form-control">
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button class="btn btn-warning" data-dismiss="modal">Save</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-
-  <!-- Posts
+  <!-- Profile
   ====================================================================== -->
-  <section id="posts" class="mb-4">
+  <section id="profile" class="mb-4">
     <div class="container">
       <div class="row">
         <!-- Start left column -->
         <div class="col-md-9">
           <div class="card">
             <div class="card-header">
-              <h4>Latest Posts</h4>
+              <h4>Edit Profile</h4>
             </div>
             <div class="card-body">
-              <table class="table table-striped">
-                <thead class="thead-dark">
-                  <tr>
-                    <th>#</th>
-                    <th>Post</th>
-                    <th>Category</th>
-                    <th>Date</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Post One</td>
-                    <td>Web Development</td>
-                    <td>28 Dec 2018</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i>&nbsp;Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Post Two</td>
-                    <td>Tech Gadgets</td>
-                    <td>29 Dec 2018</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i>&nbsp;Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Post Three</td>
-                    <td>Web Development</td>
-                    <td>2 Jan 2019</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i>&nbsp;Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Post Four</td>
-                    <td>Business</td>
-                    <td>4 Jan 2019</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i>&nbsp;Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Post Five</td>
-                    <td>Web Development</td>
-                    <td>7 Jan 2019</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i>&nbsp;Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Post Six</td>
-                    <td>Health & Wellness</td>
-                    <td>8 Jan 2019</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i>&nbsp;Details
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" value="John Citizen">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" value="john@test.test">
+                </div>
+                <div class="form-group">
+                  <label for="summary">Summary</label>
+                  <textarea class="form-control" name="profileSummary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, sunt labore quibusdam cumque doloribus sequi quos, totam expedita dolore recusandae nisi. Dignissimos consectetur quo alias, ratione laboriosam sapiente!</textarea>
+                </div>
+              </form>
             </div>
           </div>
         </div>
         <!-- End left column -->
         <!-- Start right column -->
         <div class="col-md-3">
-          <div class="card text-center bg-primary text-white mb-3">
-            <div class="card-body">
-              <h3>Posts</h3>
-              <h4 class="display-4">
-                <i class="fas fa-pencil-alt"></i> 6
-              </h4>
-              <a href="posts.html" class="btn btn-outline-light btn-sm">View</a>
-            </div>
-          </div>
-          <div class="card text-center bg-success text-white mb-3">
-            <div class="card-body">
-              <h3>Categories</h3>
-              <h4 class="display-4">
-                <i class="fas fa-folder"></i> 6
-              </h4>
-              <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
-            </div>
-          </div>
-          <div class="card text-center bg-warning text-white mb-3">
-            <div class="card-body">
-              <h3>Users</h3>
-              <h4 class="display-4">
-                <i class="fas fa-users"></i> 6
-              </h4>
-              <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
-            </div>
-          </div>
+          <h3>Your Image</h3>
+          <img src="img/avatar.png" alt="User Image" class="d-block img-fluid mb-3">
+          <button class="btn btn-primary btn-block mb-2">Edit Image</button>
+          <button class="btn btn-danger btn-block mb-2">Delete Image</button>
         </div>
       </div>
     </div>
@@ -368,7 +172,7 @@
     $('#year').text(new Date().getFullYear());
 
     // Implement Editors for modals
-    CKEDITOR.replace('postBody');
+    CKEDITOR.replace('profileSummary');
   </script>
 </body>
 
