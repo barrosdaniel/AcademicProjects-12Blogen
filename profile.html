@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+  <title>Blogen | Profile</title>
+</head>
+
+<body>
+  <!-- Navbar
+  ====================================================================== -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white p-0">
+    <div class="container">
+      <!-- Left links -->
+      <a href="index.html" class="navbar-brand">Blogen</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span
+          class="navbar-toggle-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="posts.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+        <!-- Right links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i
+                class="fas fa-user"></i>&nbsp;Welcome, John</a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item"><i class="fas fa-user-circle"></i>&nbsp;Profile</a>
+              <a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i>&nbsp;Settings</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link"><i class="fas fa-user-times"></i>
+              &nbsp;Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Header
+  ====================================================================== -->
+  <header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1><i class="fas fa-user-circle"></i>&nbsp;Profile</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Actions
+  ====================================================================== -->
+  <section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-outline-primary btn-block mb-2"><i
+              class="fas fa-cog"></i>&nbsp;Dashboard</a>
+        </div>
+        <div class="col-md-3">
+          <a href="" class="btn btn-success btn-block mb-2"><i class="fas fa-lock"></i>&nbsp;Change
+            Password</a>
+        </div>
+        <div class="col-md-3">
+          <a href="" class="btn btn-danger btn-block mb-2"><i class="fas fa-trash"></i>&nbsp;Delete
+            Account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Profile
+  ====================================================================== -->
+  <section id="profile" class="mb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Start left column -->
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit Profile</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" value="John Citizen">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" value="john@test.test">
+                </div>
+                <div class="form-group">
+                  <label for="summary">Summary</label>
+                  <textarea class="form-control" name="profileSummary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, sunt labore quibusdam cumque doloribus sequi quos, totam expedita dolore recusandae nisi. Dignissimos consectetur quo alias, ratione laboriosam sapiente!</textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End left column -->
+        <!-- Start right column -->
+        <div class="col-md-3">
+          <h3>Your Image</h3>
+          <img src="img/avatar.png" alt="User Image" class="d-block img-fluid mb-3">
+          <button class="btn btn-primary btn-block mb-2">Edit Image</button>
+          <button class="btn btn-danger btn-block mb-2">Delete Image</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer
+  ====================================================================== -->
+  <footer id="main-footer" class="bg-dark text-white my-0 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-center">&copy; Blogen and contributors <span id="year"></span>.
+            ABN
+            88 888 888 888</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts
+  ====================================================================== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    // Get current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Implement Editors for modals
+    CKEDITOR.replace('profileSummary');
+  </script>
+</body>
+
+</html>
